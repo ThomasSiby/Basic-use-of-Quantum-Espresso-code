@@ -1,6 +1,7 @@
 ---------------***********---------------------
 ###-- Crystal Structure ---###
 ---------------***********---------------------
+
 Density functional theory (DFT) calculations are ab-initio meaning the calculation is done 
 from the scratch based on given input parameters. We need to provide the crystal structure 
 in order to calculate DFT. Crystal structures are widely available in Crystallographic Information File (.CIF) format. 
@@ -16,6 +17,7 @@ http://crystdb.nims.go.jp/crystdb/search-materials
 ---------------***********---------------------
 ###-- Useful tools ---###
 ---------------***********---------------------
+
 ##-1) Vesta - https://jp-minerals.org/vesta/en/. 
 It helps you visualize crystal structure, create and modify super cells, crystal structures and many more functionality.
 
