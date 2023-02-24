@@ -28,11 +28,11 @@ bands.x < Si_bands_pp.in > Si_bands_pp.out
 
 4) Then, plotband.x
 
-Input file > Si_bands.dat (name)
-Emin, Emax > -6, 16
-output file (gnuplot/xmgr) > Si_bands.gnuplot
-output file (ps) > Si_bands.ps
-Efermi > 6.6416
+Input file > Si_bands.dat (name) \
+Emin, Emax > -6, 16 \
+output file (gnuplot/xmgr) > Si_bands.gnuplot \
+output file (ps) > Si_bands.ps \
+Efermi > 6.6416 \
 deltaE, reference E (for tics) 4, 0
 
 
