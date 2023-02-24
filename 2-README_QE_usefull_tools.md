@@ -3,7 +3,7 @@
 ---------------***********---------------------
 Density functional theory (DFT) calculations are ab-initio meaning the calculation is done 
 from the scratch based on given input parameters. We need to provide the crystal structure 
-in order to calculate DFT. Crystal structure are widely available in Crystallographic Information File (.CIF) format. 
+in order to calculate DFT. Crystal structures are widely available in Crystallographic Information File (.CIF) format. 
 There are several databases where you can find crystal structures.
 
 http://crystallography.net/cod/
@@ -36,7 +36,7 @@ cif2cell file.cif -p quantum-espresso -o inputfile.in
 ##-3) Xcrysdens
 
 You can explore the crystal structure, find out k-path and many more using Xcrysdens application - http://www.xcrysden.org
-For certain functionality, Xcrysdens requires basic calculator program. On Ubuntu/ Debian:
+For certain functionality, Xcrysdens requires a basic calculator program. On Ubuntu/ Debian:
 
 sudo apt update
 sudo apt install bc xcrysden
@@ -45,7 +45,7 @@ Manual installation:
 
 # install dependencies
 sudo apt install --no-install-recommends bc tk libglu1-mesa libtogl2 \
-      libfftw3-3 libxmu6 imagemagick openbabel libgfortran5
+      libfftw3-3 libxmu6 imagemagick openbabel libgfortran5
 
 # download the latest version of xcrysden and extract
 wget http://www.xcrysden.org/download/xcrysden-1.6.2-linux_x86_64-shared.tar.gz
