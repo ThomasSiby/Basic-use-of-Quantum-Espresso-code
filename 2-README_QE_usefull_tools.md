@@ -25,7 +25,7 @@ It helps you visualize crystal structure, create and modify super cells, crystal
 We can prepare our Quantum Espresso input file using cif2cell utility. 
 If you do not have cif2cell installed, you can use pip to install:
 
-sudo pip3 install cif2cell \
+sudo pip3 install cif2cell 
 
 You may need to add it to the path in your .bashrc manually:
 
