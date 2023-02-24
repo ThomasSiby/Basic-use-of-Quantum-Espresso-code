@@ -1,0 +1,64 @@
+&CONTROL
+! we want to perform vc-relax calculation
+!(1) relax: where only the atomic positions are allowed to vary, and 
+!(2) vc-relax: which allows to vary both the atomic positions and lattice constants.
+    calculation = 'relax'
+
+! prefix is reference to the output files
+    prefix = 'silicon'
+
+
+! output directory
+    outdir = './tmp/'
+
+! directory for the pseudo potential directory
+    pseudo_dir = './'
+
+! verbosity high will give more details on the output file
+  verbosity = 'high'
+
+/
+&SYSTEM
+
+! Bravais lattice index, which is 2 for FCC structure
+    ibrav=2, 
+    
+! Lattice constant in BOHR
+!1 Bohr = 0.529177249 Å
+    celldm(1) =14,
+
+
+! number of atoms in an unit cell
+    nat=2, 
+
+! number of different types of atom in the cell
+    ntyp=1,
+
+! kinetic energy cutoff for wavefunction in Ry
+!1 Rydberg (Ry) = 13.6056981 eV.
+    ecutwfc=30
+/
+
+
+&ELECTRONS
+
+! Mixing factor used in the self-consistent method
+  mixing_beta = 0.6
+/
+
+&ions
+/
+
+&cell
+    cell_dofree='ibrav'
+/
+
+ATOMIC_SPECIES
+  Si  28.0855  Si.pbe-rrkj.UPF
+
+ATOMIC_POSITIONS (alat)
+  Si 0.00 0.00 0.00 0 0 0
+  Si 0.25 0.25 0.25 0 0 0
+
+K_POINTS (automatic)
+  6 6 6 0 0 0
