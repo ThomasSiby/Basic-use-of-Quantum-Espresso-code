@@ -11,10 +11,10 @@ In QE input files, there are NAMELISTS and INPUT_CARDS.
 NAMELISTS variables have default values, and should be provided a new value as required by specific calculation.
 The variables can be declared in any specific order.
 
-On the other hand, the variables in the INPUT_CARDS have always to be specified and in specific order. 
+On the other hand, the variables in the INPUT_CARDS have always to be specified and in specific order. \ 
 Logically independent INPUT_CARDS may be organized in any order.
 
-There are three mandatory NAMELISTS in PWscf: 
+There are three mandatory NAMELISTS in PWscf: \
 (1) &CONTROL: specifies the flux of computation, \
 (2) &SYSTEM: specifies the system, and \
 (3) &ELECTRONS: specifies the algorithms used to solve the Kohn-Sham equation. 
