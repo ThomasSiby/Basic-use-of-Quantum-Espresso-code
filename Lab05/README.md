@@ -2,7 +2,7 @@
 
 Before we can run the Density of States (DOS) calculation, we need
 
-1) Perform fixed-ion self consistent filed (scf) calculation.\
+1) Perform fixed-ion self consistent filed (scf) calculation.
 2) Fix the parameters and run non-self consistent field (nscf) calculation with denser k-point grid.
 
 #-----scf calculation---------------------------------------------------------------------
