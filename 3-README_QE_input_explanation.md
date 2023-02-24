@@ -60,28 +60,18 @@ There are two other NAMELISTS: &IONS and &CELLS, which need to be specified depe
     ! increase the maximum number of iterations.
  /
 
-# In this section we list all the atomic species, so we need to have as many
-# entries as 'ntyp' above. These should be entered one per line, with the
-# atomic symbol, followed by the mass (only used for certain types of
-# calculations), followed by the name of the pseudopotential. In the same
-# directory as the input file we have a symbolic link to the pseudotential
-# file we need. This saves us from making multiple copies of the same file
-# for different calculations.
+#In this section we list all the atomic species, so we need to have as many entries as 'ntyp' above. These should be entered one per line, with the atomic symbol, followed by the mass (only used for certain types of calculations), followed by the name of the pseudopotential. In the same directory as the input file we have a symbolic link to the pseudotential file we need. This saves us from making multiple copies of the same file for different calculations.
+
 ATOMIC_SPECIES
  C  12.011  C.pz-vbc.UPF
 
-# Now we list the postitions of all the atoms. There are several possible ways
-# to do this. Here we use the 'crystal' option, which specifies that they are
-# given in fractional coordinates along each of the crystal axes. There should
-# be one line for each atom in the cell - so 'nat' lines in total.
+#Now we list the postitions of all the atoms. There are several possible ways to do this. Here we use the 'crystal' option, which specifies that they are given in fractional coordinates along each of the crystal axes. There should be one line for each atom in the cell - so 'nat' lines in total.
+
 ATOMIC_POSITIONS crystal
- C 0.00 0.00 0.00
+ C 0.00 0.00 0.00 \
  C 0.25 0.25 0.25
 
-# Finally we specify the k-point sampling to use. Again there are several
-# options. Here we use automatic, which allows use to easily specify a regular
-# 4x4x4 grid of points along the crystal axes. The next three numbers specify
-# whether to offset the grid by half a lattice spacing our not. Often
-# convergence is a little better if you do this, but it varies.
-K_POINTS automatic
+#Finally we specify the k-point sampling to use. Again there are several options. Here we use automatic, which allows use to easily specify a regular 4x4x4 grid of points along the crystal axes. The next three numbers specify whether to offset the grid by half a lattice spacing our not. Often convergence is a little better if you do this, but it varies.
+
+K_POINTS automatic \
   4 4 4 1 1 1
