@@ -1,21 +1,22 @@
-
 ###-- Quantum Espresso installation ---###
+
+https://pranabdas.github.io/espresso/ => This tutorials also helped a lot during the preparation of this page. 
 
 We can install Quantum Espresso in our personal laptops or desktops 
 to run relatively less computationally intensive calculations. 
 If we intend to perform computationally heavy tasks, we would need 
-access to better computing resources with large number of CPU 
+access to better computing resources with a large number of CPU 
 (or GPU) cores, memory, bandwidth, and disc IO.
 
-Throughout our lecture, we will use oue server Quantis (https://guacamole.nano.ei.tum.de/#/)
-for the calculations. 
+Throughout our lecture, we will use our server Quantis (https://guacamole.nano.ei.tum.de/#/)
+for the calculations. This is applicable to the students of Technical university of Munich.
 
 ---------------***********---------------------
 ###--Additional Notes for Ubuntu users --###
 ---------------***********---------------------
 
-Perhaps the most easiest way to install Quantum Espresso is from the package manager 
-of respective Linux distribution. This should work fine for us and this is recommended option. 
+Perhaps the easiest way to install Quantum Espresso is from the package manager 
+of the respective Linux distribution. This should work fine for us and this is a recommended option. 
 Following commands are for Ubuntu / Debian. First make sure your system is up-to-date.
 
 sudo apt update && sudo apt upgrade
@@ -23,30 +24,30 @@ sudo apt update && sudo apt upgrade
 Install Quantum Espresso from apt repository:
 
 sudo apt install --no-install-recommends \
-    libfftw3-dev \
-    quantum-espresso
+    libfftw3-dev \
+    quantum-espresso
 
-If you want to compile from the source yourself, here are the installation steps for latest version 
+If you want to compile from the source yourself, here are the installation steps for the latest version 
 of Quantum Espresso (7.1) in a Ubuntu (LTS 22.04) machine using a single processor (Serial Processing). 
 First install the recommended libraries and dependencies:
 
 sudo apt install --no-install-recommends \
-    build-essential \
-    ca-certificates \
-    libblas3 \
-    libc6 \
-    libfftw3-dev \
-    libgcc-s1 \
-    gfortran \
-    liblapack-dev \
-    wget
+    build-essential \
+    ca-certificates \
+    libblas3 \
+    libc6 \
+    libfftw3-dev \
+    libgcc-s1 \
+    gfortran \
+    liblapack-dev \
+    wget
 
 If you want to compile for parallel processing, you need to also install:
 
 sudo apt install --no-install-recommends \
-    libopenmpi-dev \
-    libscalapack-openmpi-dev \
-    libelpa17  #  use libelpa4 on Ubuntu 20.04
+    libopenmpi-dev \
+    libscalapack-openmpi-dev \
+    libelpa17  #  use libelpa4 on Ubuntu 20.04
 
 Download Quantum Espresso (latest version 7.1 at the time of writing):
 
@@ -61,7 +62,7 @@ Go to the qe directory and issue configure:
 cd q-e-qe-7.1
 ./configure
 
-Here you can provide various configuration options. Read the manual in oder to properly understand. 
+Here you can provide various configuration options. Read the manual in order to properly understand. 
 But in most cases you will be just fine with the defaults, it should detect the system configuration 
 automatically, in case you don't get what you want, try the various configuration flags with configure.
 
@@ -101,14 +102,14 @@ mpirun -np 12 pw.x -inp inputfile > outputfile
 
 Where -np 12 specifies the number of processors. -inp stands for input file. 
 Alternatively, we can use -i, or -in, or -input, or even standard input redirect <. 
-But beware some systems may not interpret all the different options, I think safe option is to use -i.
+But beware some systems may not interpret all the different options, I think the safe option is to use -i.
 
 Once installation is completed, optionally we can run tests if everything went OK. 
 Go to the test-suite directory and run:
 
 make run-tests
 
-If all is well, we will see Passed messages and we are good to go.
+If all is well, we will see past messages and we are good to go.
 
 
 #---------Installing PWTK---------#
