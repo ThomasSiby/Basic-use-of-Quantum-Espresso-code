@@ -7,12 +7,12 @@ from the scratch based on given input parameters. We need to provide the crystal
 in order to calculate DFT. Crystal structures are widely available in Crystallographic Information File (.CIF) format. 
 There are several databases where you can find crystal structures.
 
-http://crystallography.net/cod/
-https://materialsproject.org
-https://mpds.io/
-https://icsd.fiz-karlsruhe.de/index.xhtml
-http://aflowlib.org/CrystalDatabase/
-http://crystdb.nims.go.jp/crystdb/search-materials
+http://crystallography.net/cod/\
+https://materialsproject.org\
+https://mpds.io/\
+https://icsd.fiz-karlsruhe.de/index.xhtml\
+http://aflowlib.org/CrystalDatabase/\
+http://crystdb.nims.go.jp/crystdb/search-materials\
 
 ---------------***********---------------------
 ###-- Useful tools ---###
@@ -29,7 +29,7 @@ sudo pip3 install cif2cell
 
 You may need to add it to the path in your .bashrc manually:
 
-export PATH="/home/pranab/.local/lib/python3.8/site-packages/:$PATH"
+export PATH="/home/name/.local/lib/python3.8/site-packages/:$PATH"
 
 Running cif2cell command:
 
