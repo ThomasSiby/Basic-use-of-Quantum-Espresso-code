@@ -25,7 +25,7 @@ It helps you visualize crystal structure, create and modify super cells, crystal
 We can prepare our Quantum Espresso input file using cif2cell utility. 
 If you do not have cif2cell installed, you can use pip to install:
 
-sudo pip3 install cif2cell
+sudo pip3 install cif2cell \
 
 You may need to add it to the path in your .bashrc manually:
 
@@ -40,8 +40,8 @@ cif2cell file.cif -p quantum-espresso -o inputfile.in
 You can explore the crystal structure, find out k-path and many more using Xcrysdens application - http://www.xcrysden.org
 For certain functionality, Xcrysdens requires a basic calculator program. On Ubuntu/ Debian:
 
-sudo apt update
-sudo apt install bc xcrysden
+sudo apt update \
+sudo apt install bc xcrysden 
 
 Manual installation:
 
@@ -50,7 +50,7 @@ sudo apt install --no-install-recommends bc tk libglu1-mesa libtogl2 \
       libfftw3-3 libxmu6 imagemagick openbabel libgfortran5
 
 # download the latest version of xcrysden and extract
-wget http://www.xcrysden.org/download/xcrysden-1.6.2-linux_x86_64-shared.tar.gz
+wget http://www.xcrysden.org/download/xcrysden-1.6.2-linux_x86_64-shared.tar.gz \
 tar -zxvf xcrysden-1.6.2-linux_x86_64-shared.tar.gz
 
 # launch (provided you extracted under your home directory)
