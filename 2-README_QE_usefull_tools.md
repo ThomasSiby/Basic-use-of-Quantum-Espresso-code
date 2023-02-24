@@ -12,7 +12,7 @@ https://materialsproject.org \
 https://mpds.io/ \
 https://icsd.fiz-karlsruhe.de/index.xhtml \
 http://aflowlib.org/CrystalDatabase/ \
-http://crystdb.nims.go.jp/crystdb/search-materials \
+http://crystdb.nims.go.jp/crystdb/search-materials 
 
 ---------------***********---------------------
 ###-- Useful tools ---###
